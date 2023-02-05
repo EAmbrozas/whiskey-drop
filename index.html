@@ -53,7 +53,7 @@
                     </p>
                     <p class="text-muted"><small>You must be over 18 to sign up to our services. Please, drink
                             responsibly.</small></p>
-                    <button class="btn btn-success btn-lg">Sign Up!</button>
+                    <button class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#signUpModal">Sign Up!</button>
                 </section>
             </div>
         </div>
@@ -184,6 +184,38 @@
         </section>
         <!-- /.favorites -->
     </article>
+    <!-- Modal -->
+    <div class="modal" tabindex="-1" id="signUpModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up To Whiskey Drop</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                          <label for="repeatPassword" class="form-label">Repeat Password</label>
+                          <input type="password" class="form-control" id="repeatPassword" placeholder="Repeat Password">
+                        </div>
+                        
+                        <button type="submit" class="btn btn-success">Submit</button>
+                      </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
     <!-- Font awesome-->>
     <script src="https://kit.fontawesome.com/481ffab01d.js" crossorigin="anonymous"></script>
     <!-- Bootstrap JavaScript-->
