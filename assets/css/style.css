@@ -4,12 +4,52 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.alert-container {}
+/* Navbar */
+.navalert-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    z-index: 1;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-toggler {
+    border: 0;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav a {
+    font-weight: bold;
+}
+
+.alert-container .col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.site-wide-alert {
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 5px 15px;
+    background-color: #eec882;
+    border-color: #eec882;
+}
 
 .callout-container {
     height: 100vh;
 
-    background: url('../images/whiskey-background.jpg') no-repeat center bottom fixed;
+    background: url('../images/whiskey-background.jpg') no-repeat right bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -43,6 +83,10 @@ body {
     color: #a7a7a7;
 }
 
+.lead mark {
+    background-color: white;
+}
+
 .callout small {
     font-size: 60%;
     font-style: italic;
@@ -58,7 +102,7 @@ body {
 /* Buttons */
 .btn--cta {
     font-weight: bold;
-    border: 23px;
+    border-radius: 23px;
     width: 160px;
 }
 
